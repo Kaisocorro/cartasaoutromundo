@@ -1,18 +1,9 @@
-/* Garantir que os padding e bordas não afetem o layout */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Estilo do HTML */
-html {
+html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-/* Estilo do Body */
-body {
+body{
     background-image: url(../images/fundo4.jpg);
     background-size: cover;
     background-position: center;
@@ -23,7 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Estilo do Navegador */
 nav {
     display: flex;
     justify-content: center;
@@ -48,7 +38,6 @@ nav a:hover {
     margin-right: 20px;
 }
 
-/* Estilo do título principal */
 h1 {
     font-family: "Poppins", serif;
     font-weight: 700;
@@ -61,7 +50,6 @@ h1 {
     margin-bottom: -10px;
 }
 
-/* Seção 1 */
 div#coisa {
     background-image: url(../images/selo2.png);
     background-color: transparent;
@@ -91,7 +79,6 @@ div#coisa {
     margin-bottom: 100px;
 }
 
-/* Seção 2 */
 #secao2 {
     font-family: "Poppins", serif;
     margin-top: 700px;
@@ -129,7 +116,6 @@ div#coisa {
     font-size: 15px;
 }
 
-/* Seção 3 */
 #secao3 {
     font-family: "Poppins", serif;
     margin-top: 700px;
@@ -163,7 +149,6 @@ div#coisa {
     font-size: 18px;
 }
 
-/* Seção 4 */
 #secao4 {
     font-family: "Poppins", serif;
     margin-top: 700px;
@@ -184,7 +169,6 @@ div#coisa {
     margin-top: 100px;
 }
 
-/* Seção 5 */
 #secao5 {
     font-family: "Poppins", serif;
     margin-top: 700px;
@@ -229,29 +213,22 @@ div#coisa {
 @media (max-width: 768px) {
     body {
         background-size: cover;
-        background-attachment: scroll;
     }
 
     h1 {
         font-size: 40px;
         text-align: center;
         margin-left: 0;
-        margin-right: 0;
-        text-shadow: 2px -5px 5px rgba(0, 0, 0, 0.5);
     }
 
     nav {
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 20px;
-        width: 100%;
     }
 
     nav a {
         padding: 10px;
         font-size: 16px;
-        width: 100%;
-        text-align: left;
     }
 
     .column {
@@ -262,34 +239,9 @@ div#coisa {
         width: 100%;
     }
 
-    /* Ajustando a largura dos containers */
     #gol, #bola, #santos, #complicada, #perfeitinha, #jorge, #indiana {
         width: 100%;
-        padding: 0 20px;
-        margin: 0 auto;
-    }
-
-    /* Ajustes para as seções */
-    #coisa, #gol, #e, #santos, #jones {
-        background-size: cover; /* Garantir que o fundo cubra a área */
-        background-position: center; /* Melhor posicionamento da imagem de fundo */
-    }
-
-    /* Ajuste de tamanhos de fonte */
-    #santos, #palito {
-        font-size: 14px;
-    }
-
-    #perfeitinha {
-        font-size: 16px;
-    }
-
-    #palito {
-        font-size: 18px;
-    }
-
-    /* Ajuste de margens */
-    #dois, #indiana {
-        margin-top: 20px;
     }
 }
+
+
