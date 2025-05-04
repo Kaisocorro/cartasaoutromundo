@@ -1,238 +1,33 @@
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-body{
-    background-image: url(../images/fundo4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
-    background-attachment: fixed;
-    overflow-x: hidden;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border-bottom: 4px solid white;
-    padding: 20px;
-}
-
-nav a {
-    color: white;
-    padding: 14px 30px;
-    text-decoration: none;
-    font-size: medium;
-}
-
-nav a:hover {
-    background-color: #033f8f;
-    padding: 14px 50px;
-    text-decoration: none;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-h1 {
-    font-family: "Poppins", serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 70px;
-    margin-left: 100px;
-    text-shadow: 5px -10px 5px rgba(0, 0, 0, 0.5);
-    color: white;
-    -webkit-text-stroke: 2px red;
-    margin-bottom: -10px;
-}
-
-div#coisa {
-    background-image: url(../images/selo2.png);
-    background-color: transparent;
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    border: 0;
-    background-size: cover;
-    display: block;
-    font-family: "Poppins", serif;
-}
-
-#um {
-    font-family: "Poppins", serif;
-    background-color: transparent;
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-#secao1 {
-    font-family: "Poppins", serif;
-    margin-bottom: 100px;
-}
-
-#secao2 {
-    font-family: "Poppins", serif;
-    margin-top: 700px;
-}
-
-#gol {
-    display: block;
-    width: 100%;
-    border-top: 4px solid white;
-    background-color: transparent;
-    margin-top: 20px;
-}
-
-#bola {
-    background-image: url(../images/papel1.png);
-    background-color: transparent;
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    border: 0;
-    display: block;
-    font-family: "Poppins", serif;
-    background-size: cover;
-}
-
-#santos {
-    font-family: "Poppins", serif;
-    background-color: transparent;
-    display: block;
-    border: 10px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-#secao3 {
-    font-family: "Poppins", serif;
-    margin-top: 700px;
-}
-
-#complicada {
-    display: block;
-    width: 100%;
-    background-color: transparent;
-}
-
-#e {
-    background-image: url(../images/papel2.png);
-    background-color: transparent;
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    border: 0;
-    display: block;
-    font-family: "Poppins", serif;
-    background-size: cover;
-}
-
-#perfeitinha {
-    font-family: "Poppins", serif;
-    background-color: transparent;
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-#secao4 {
-    font-family: "Poppins", serif;
-    margin-top: 700px;
-}
-
-#jorge {
-    display: block;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    margin-top: 100px;
-}
-
-#ben {
-    display: block;
-    width: 90%;
-    background-color: transparent;
-    margin-top: 100px;
-}
-
-#secao5 {
-    font-family: "Poppins", serif;
-    margin-top: 700px;
-}
-
-#indiana {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
-    background-color: transparent;
-}
-
-#jones {
-    background-image: url(../images/lapis2.png);
-    background-color: transparent;
-    width: 90%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    border: 0;
-    display: block;
-    font-family: "Poppins", serif;
-    background-size: cover;
-}
-
-#palito {
-    font-family: "Poppins", serif;
-    background-color: transparent;
-    display: inline-block;
-    border: 10px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20px;
-}
-
 /* Mobile styles */
 @media (max-width: 768px) {
     body {
         background-size: cover;
+        background-attachment: scroll; /* Para melhorar o comportamento em mobile */
     }
 
     h1 {
         font-size: 40px;
         text-align: center;
         margin-left: 0;
+        margin-right: 0; /* Remover a margem lateral */
+        text-shadow: 2px -5px 5px rgba(0, 0, 0, 0.5); /* Ajuste no efeito de sombra para melhor legibilidade */
     }
 
     nav {
         flex-direction: column;
         align-items: flex-start;
+        padding: 10px 20px; /* Ajuste de padding para uma melhor disposição */
     }
 
     nav a {
         padding: 10px;
         font-size: 16px;
+        width: 100%; /* Fazendo com que os links ocupem a largura total */
+        text-align: left; /* Ajustando alinhamento para a esquerda */
     }
 
     .column {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* Certifique-se de que os elementos de coluna ocupem toda a largura */
     }
 
     .container {
@@ -241,5 +36,29 @@ div#coisa {
 
     #gol, #bola, #santos, #complicada, #perfeitinha, #jorge, #indiana {
         width: 100%;
+        padding: 0 20px; /* Para garantir que o conteúdo não encoste nas bordas */
+    }
+
+    /* Ajuste do tamanho da fonte em seções específicas */
+    #santos, #palito {
+        font-size: 14px; /* Reduzir o tamanho da fonte para telas pequenas */
+    }
+
+    /* Ajustando o tamanho do fundo e imagem */
+    #coisa, #gol, #e, #santos, #jones {
+        background-size: cover; /* Garantir que a imagem de fundo cubra o espaço sem distorção */
+    }
+
+    #perfeitinha {
+        font-size: 16px; /* Ajustando a fonte para legibilidade */
+    }
+
+    #palito {
+        font-size: 18px; /* Ajuste específico para garantir legibilidade */
+    }
+
+    /* Outros ajustes para tornar o layout mais fluído */
+    #dois, #indiana {
+        margin-top: 50px;
     }
 }
